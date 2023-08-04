@@ -18,9 +18,20 @@ for i in range(len(nomes)):
         print(f"Danilo é o numero {i}")
 if not ta_ou_nao:
     print("nao encontrei")
-'''
-lista = [1,2,3,4]
-aux = lista[0]
-lista[0] = lista[3]
-lista[3] = aux
+
+lista = [12,23,36,41,69]
 print(lista)
+ultimo = len(lista)-1
+for i in range(len(lista)):
+    aux = lista[i]
+    lista[i] = lista[ultimo-i]
+    lista[ultimo-i] = aux
+    print(lista)
+'''
+lista1 = [1,2,3,4,5,6,7]
+lista2 = [6,7,12,53,2]
+for elem1 in lista1:
+    for elem2 in lista2:
+        if elem2 == elem1:
+            intersect.append(elem1)
+print(intersect)
